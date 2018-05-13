@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html lang="br">
+{% load staticfiles %}
+<html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <meta charset="UTF-8">
     <title>The Universe</title>
-    <h1><a href="/">Universe</a></h1>
 </head>
-<body>
-{% for post in posts %}
-<div>
-    <p>publicado: {{ post.published_date }}</p>
-    <h2><a href=""> {{ post.title}} </a></h2>
-    <p>{{ post.text|linebreaksbr}}</p>
 
+<div id="interface">
+    <h1>Universe</h1>
 </div>
-{% endfor %}
+<div id="corpo">
+ {% for post in posts %}
+    <header id="cabecalho">
 
+        <article id="post">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+
+                    <div class="date">
+                        <p id="publish">published: {{ post.published_date }}</p>
+                    </div>
+
+                </article>
+        </header>
+            {% endfor %}
+</div>
+     <footer id="rodape">
+        <p>Copyright &copy;2018 - by Patrick Amaral<br/>
+        <a href="https://github.com/Phomint" target="_blank">GitHub</a></p>
+
+    </footer>
 </body>
 </html>

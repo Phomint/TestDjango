@@ -1,0 +1,66 @@
+ @charset "utf-8";
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+ body{
+          font-family: 'Roboto', sans-serif;
+	      background-color: #ffffff;
+	      width: auto;
+ }
+ p{
+          font-size: 16pt;
+	      margin-left: 200px;
+	      margin-right: 200px;
+
+ }
+
+ p#publish{
+          color: #aaaaaa;
+          font-size: 14pt;
+ }
+
+ div#corpo{
+          margin: 0px 100px 0px 100px;
+
+ }
+ div#interface{
+		  width: auto;
+		  background-color: #ffffff;
+		  margin:-10px 0px 0px 0px;
+		  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+		  padding: 20px;
+		  
+ }
+
+ header#cabecalho h2{
+	 padding: 40px;
+	 margin-top: 10px;
+	 margin-bottom : -20px;
+	 text-align: left;
+ }
+
+ article#post {
+	 width: auto;
+	 text-align : left;
+ }
+
+ article#post h2{
+	  font-size : 22pt;
+	  text-align: center;
+ }
+ /*RODAPE*/
+ footer#rodape p{
+    color: gray;
+	text-align: center;
+    background-color: #dddddd;
+	font-size: 16px;
+	padding: 10px;
+	margin: 80px -30px -30px -30px;
+ }
+
+ footer#rodape a{
+    color: black;
+ }
+
+
+
+
